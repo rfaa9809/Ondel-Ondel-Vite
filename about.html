@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ondel-ondel-cookies</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+  <style>
+    /* ===== Scroll to top button (punya kamu) ===== */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 35px;
+      right: 35px;
+      width: 55px;
+      height: 55px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      background: linear-gradient(135deg, #8B5E34, #F28C38);
+      box-shadow: 0 8px 25px rgba(242, 140, 56, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+      z-index: 999;
+    }
+    #scrollTopBtn.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    #scrollTopBtn:hover {
+      transform: translateY(0) scale(1.1);
+      box-shadow: 0 12px 30px rgba(244, 180, 0, 0.7);
+    }
+    #scrollTopBtn svg {
+      width: 26px;
+      height: 26px;
+      display: block;
+    }
+
+    /* ===== Premium background accents (tanpa ubah warna utama) ===== */
+    .bg-accents::before,
+    .bg-accents::after{
+      content:"";
+      position:fixed;
+      width:520px;height:520px;
+      border-radius:999px;
+      filter: blur(90px);
+      opacity:.20;
+      pointer-events:none;
+      z-index:0;
+    }
+    .bg-accents::before{ top:-160px; left:-160px; background:#c0602a; }
+    .bg-accents::after{ bottom:-180px; right:-180px; background:#d4a96a; }
+
+    .soft-divider{
+      height:1px;
+      background: linear-gradient(to right, transparent, #2a1f10, transparent);
+    }
+
+    .badge-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.45rem .9rem;
+      border-radius:999px;
+      border:1px solid #2a1f10;
+      background: rgba(13,9,5,.55);
+      color:#b8a898;
+      font-size:.75rem;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-family:'DM Sans',sans-serif;
+    }
+
+    .glass{
+      background: rgba(22,16,8,.78);
+      border: 1px solid #2a1f10;
+      backdrop-filter: blur(10px);
+    }
+
+    .card{
+      position:relative;
+      border-radius:20px;
+      overflow:hidden;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+    .card:hover{
+      transform: translateY(-4px);
+      border-color: rgba(212,169,106,.35);
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background: radial-gradient(700px circle at var(--x,50%) var(--y,0%),
+        rgba(212,169,106,.22), transparent 55%);
+      opacity:0;
+      transition: opacity .35s ease;
+      pointer-events:none;
+    }
+    .card:hover::before{ opacity:1; }
+
+    .section-title{
+      font-family:'Playfair Display',serif;
+      font-style: italic;
+    }
+
+    .icon-chip{
+      width:44px;height:44px;
+      border-radius:14px;
+      display:flex;align-items:center;justify-content:center;
+      border:1px solid #2a1f10;
+      background: rgba(13,9,5,.45);
+      flex: 0 0 auto;
+    }
+
+    /* Scroll hint (klik turun) */
+    .scroll-hint{
+      position:absolute;
+      bottom:26px;
+      left:50%;
+      transform:translateX(-50%);
+      z-index:10;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:.5rem;
+      opacity:.65;
+      cursor:pointer;
+      transition: opacity .25s ease, transform .25s ease;
+    }
+    .scroll-hint:hover{
+      opacity:1;
+      transform: translateX(-50%) translateY(-2px);
+    }
+
+    /* Reveal animation */
+    .reveal{
+      opacity:0;
+      transform: translateY(14px);
+      transition: all .65s ease;
+    }
+    .reveal.show{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* Timeline */
+    .timeline{
+      position:relative;
+      padding-left:22px;
+    }
+    .timeline::before{
+      content:"";
+      position:absolute;
+      left:6px; top:8px; bottom:8px;
+      width:2px;
+      background: linear-gradient(to bottom, rgba(192,96,42,.0), rgba(192,96,42,.55), rgba(42,31,16,.0));
+    }
+    .dot{
+      width:14px;height:14px;border-radius:999px;
+      background:#d4a96a;
+      box-shadow:0 0 0 6px rgba(212,169,106,.08);
+      flex:0 0 auto;
+      margin-top:4px;
+    }
+  </style>
+</head>
+
+<body class="bg-[#0a0805]">
+  <div id="app"></div>
+  <script type="module" src="/src/about.js"></script>
+</body>
+
+</html>
