@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | ondel-ondel-cookies</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+ <style>
+        /* ===== Scroll Top Button ===== */
+    #scrollTopBtn{
+      position:fixed; bottom:35px; right:35px; width:55px; height:55px;
+      border:none; border-radius:50%; cursor:pointer;
+      background:linear-gradient(135deg,#8B5E34,#F28C38);
+      box-shadow:0 8px 25px rgba(242,140,56,.5);
+      display:flex; align-items:center; justify-content:center;
+      opacity:0; visibility:hidden; transform:translateY(20px);
+      transition:all .4s ease; z-index:999;
+    }
+    #scrollTopBtn.show{opacity:1; visibility:visible; transform:translateY(0)}
+    #scrollTopBtn:hover{transform:translateY(0) scale(1.1); box-shadow:0 12px 30px rgba(244,180,0,.7)}
+    #scrollTopBtn svg{width:26px;height:26px;display:block}
+  </style>
+<body class="bg-[#0a0805]">
+  <div id="app"></div>
+  <script type="module" src="/src/services.js"></script>
+</body>
+</html>
