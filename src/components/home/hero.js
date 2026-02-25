@@ -1,6 +1,6 @@
 export function Hero() {
   return `
-            <section class="hero">
+                <section class="hero">
         <div class="hero-photo"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content w-full px-6 sm:px-10 lg:px-20 max-w-screen-xl mx-auto">
@@ -38,11 +38,27 @@ export function Hero() {
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-50">
-            <span class="text-[#b8a898] text-xs tracking-widest uppercase"
-                style="font-family:'DM Sans',sans-serif">Scroll</span>
-            <div class="scroll-dot w-1 h-4 rounded-full bg-[#d4a96a]"></div>
-        </div>
+        <div 
+    onclick="window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })"
+    class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-50 cursor-pointer hover:opacity-100 transition"
+>
+    <span class="text-[#b8a898] text-xs tracking-widest uppercase"
+        style="font-family:'DM Sans',sans-serif">
+        Scroll
+    </span>
+
+    <div class="scroll-dot w-1 h-4 rounded-full bg-[#d4a96a]"></div>
+
+    <!-- Arrow Down -->
+    <svg xmlns="http://www.w3.org/2000/svg" 
+        class="w-4 h-4 text-[#d4a96a] animate-bounce" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor" 
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+</div>
     </section>
 
     `;
