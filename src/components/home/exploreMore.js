@@ -7,10 +7,10 @@ import coklatStickImg from '../../assets/products/coklat-stick.jpeg';
 import bolaMesesImg from '../../assets/products/Bola-meses.jpeg'
 import batangKejuImg from '../../assets/products/batang-keju.jpeg'
 import BoluCoklatImg from '../../assets/products/Bolu-coklat.jpeg'
-import BoluPandanCoklatImg from '../../assets/products/bolu-pandan-coklat.jpeg'
-import BoluPandanImg from '../../assets/products/bolu-pandan.jpeg'
-import BoluTapeImg from '../../assets/products/bolu-tape.jpeg'
-import BoluKenariImg from '../../assets/products/bolu-kenari.jpeg'
+import BoluPandanCoklatImg from '../../assets/products/Bolu-pandan-coklat.jpeg'
+import BoluPandanImg from '../../assets/products/Bolu-pandan.jpeg'
+import BoluTapeImg from '../../assets/products/Bolu-tape.jpeg'
+import BoluKenariImg from '../../assets/products/Bolu-kenari.jpeg'
 
 export function exploreMore() {
   return `
