@@ -17,7 +17,7 @@ export function Banner() {
             </h2>
             <p class="text-[#d4c4b0] text-sm sm:text-base max-w-sm mx-auto mb-6 leading-relaxed"
                 style="font-family:'DM Sans',sans-serif;">
-                Menyediakan Berbagai Macam Cookies Renyah dan Bolu Empuk yang Setala Enak dan Lezat
+                Menyediakan Berbagai Macam Cake and Cookies Renyah dan Bolu Empuk yang Setala Enak dan Lezat
             </p>
             <a href="about.html" style="background:#c0602a; font-family:'DM Sans',sans-serif;"
                 class="inline-block text-white font-semibold text-sm px-8 py-2.5 rounded-md hover:bg-[#a84e22] active:scale-95 transition-all duration-200">

@@ -1,24 +1,21 @@
+import logo from "../assets/logo.png";
+
 export function Navbar() {
   return `
     <nav class="fixed w-full z-20 top-0 start-0" id="mainNav">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6 py-5">
-        <a href="#" class="flex items-center gap-3">
-          <div class="w-8 h-8 rounded-full bg-[#c0602a] flex items-center justify-center">
-            <svg
-              class="w-4 h-4 text-white"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 3a1 1 0 110 2 1 1 0 010-2zm-3 8l1.5-4.5h3L13 13H7z" />
-            </svg>
-          </div>
-          <span
-            class="text-[#f5f0e8] font-semibold text-base tracking-wide"
-            style="font-family:'Playfair Display',serif"
-          >
-            Ondel-Ondel
-          </span>
-        </a>
+          <a href="/" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-[#F9EEE7]
+                        flex items-center justify-center overflow-hidden
+                        shadow-[0_0_18px_rgba(192,96,42,0.45)]
+                        border border-[#3a1f0d]">
+              <img src="${logo}" alt="Ondel-Ondel" class="w-10 h-10 object-contain">
+            </div>
+            <span class="text-[#f5f0e8] font-semibold text-base tracking-wide"
+              style="font-family:'Playfair Display',serif">
+              Ondel-Ondel
+            </span>
+          </a>
         <button
           data-collapse-toggle="navbar-main"
           type="button"

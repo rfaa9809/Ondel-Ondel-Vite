@@ -1,7 +1,13 @@
+import logo from "../../assets/logo.png";
+import menuImg from '../../assets/menu.jpeg'
+import posterImg from '../../assets/poster-ondel-ondel.jpeg'
+
 export function mainAbout() {
   return `
 
   <div class="h-24"></div>
+
+ 
       <main class="relative bg-accents z-0">
 
     <!-- HERO ABOUT -->
@@ -10,7 +16,7 @@ export function mainAbout() {
         <span class="badge-tag mb-4 inline-flex">✦ <span>Tentang Kami</span></span>
 
         <h1 class="text-7xl sm:text-6xl font-bold text-[#f5f0e8] section-title">
-          Sejarah Ondel-Ondel
+          Sejarah Ondel-Ondel Cake and Cookies
         </h1>
 
         <p class="text-[#b8a898] mt-5 max-w-2xl mx-auto leading-relaxed" style="font-family:'DM Sans',sans-serif;">
@@ -32,7 +38,7 @@ export function mainAbout() {
 
     <div class="soft-divider max-w-screen-xl mx-auto"></div>
 
-    <!-- SEJARAH + TIMELINE + HIGHLIGHT -->
+     <!-- SEJARAH + TIMELINE + HIGHLIGHT -->
     <section id="sejarahSection" class="py-14 px-6 sm:px-10 lg:px-20">
       <div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
@@ -54,7 +60,7 @@ export function mainAbout() {
           </div>
 
           <p class="text-[#b8a898] leading-relaxed" style="font-family:'DM Sans',sans-serif;">
-            Ondel-Ondel lahir dari dapur rumahan dan resep keluarga untuk momen spesial.
+            Ondel-Ondel Cake and Cookies lahir dari dapur rumahan dan resep keluarga untuk momen spesial.
             Berawal dari permintaan teman dan keluarga, kami memproduksi secara konsisten
             dengan fokus pada bahan premium, rasa yang “nagih”, dan packaging rapi.
           </p>
@@ -123,6 +129,117 @@ export function mainAbout() {
           </div>
         </div>
 
+      </div>
+    </section>
+
+     <!-- BRAND IDENTITY SECTION -->
+    <section class="relative pt-16 pb-10 px-6 sm:px-10 lg:px-20 overflow-hidden">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="glass card p-10 md:p-14 reveal">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            
+            <!-- Logo Side -->
+            <div class="flex flex-col items-center gap-5 flex-shrink-0">
+              <div class="w-36 h-36 rounded-full bg-[#f9eee7]
+                          flex items-center justify-center 
+                          shadow-[0_0_60px_rgba(192,96,42,0.35)]
+                          border border-[#2a1f10]">
+                <img src="${logo}" alt="Ondel-Ondel Logo" class="w-40 h-40 object-contain">
+              </div>
+              <div class="text-center">
+                <p class="text-[#f5f0e8] font-semibold text-xl tracking-wide"
+                  style="font-family:'Playfair Display',serif; font-style:italic;">
+                  Ondel-Ondel
+                </p>
+                <p class="text-[#7a6e62] text-xs tracking-widest uppercase mt-1"
+                  style="font-family:'DM Sans',sans-serif;">
+                  Cake and Cookies
+                </p>
+              </div>
+            </div>
+
+            <!-- Divider vertical -->
+            <div class="hidden md:block w-px self-stretch bg-gradient-to-b from-transparent via-[#2a1f10] to-transparent"></div>
+
+            <!-- Filosofi Side -->
+            <div class="flex-1">
+              <span class="badge-tag mb-4 inline-flex">✦ <span>Filosofi Brand</span></span>
+              <h2 class="text-3xl sm:text-4xl font-bold text-[#f5f0e8] mt-3 section-title">
+                Filosofi Logo
+              </h2>
+              <div class="w-12 h-0.5 bg-[#c0602a] mt-4 mb-6 rounded-full"></div>
+              <p class="text-[#b8a898] leading-relaxed mb-5" style="font-family:'DM Sans',sans-serif;">
+                <span class="text-[#d4a96a] font-semibold">Ondel-Ondel Cake and Cookies</span> Logo ini menyatukan ikon budaya Betawi (Ondel-ondel & Monas) sebagai identitas lokal yang kuat dengan tangkai gandum sebagai simbol bahan baku berkualitas. Paduan warna cokelat dan lingkaran ganda mencerminkan kehangatan serta komitmen brand dalam menyajikan kelezatan tradisional yang terpercaya sejak 2016.
+              </p>
+              <p class="text-[#b8a898] leading-relaxed" style="font-family:'DM Sans',sans-serif;">
+                Nama ini juga mencerminkan semangat kami: <span class="text-[#f5f0e8]">berani tampil beda</span>, 
+                mempertahankan kualitas, dan membawa kebahagiaan lewat setiap gigitan.
+              </p>
+
+              <div class="mt-8 grid grid-cols-3 gap-4">
+                <div class="text-center p-4 rounded-xl border border-[#2a1f10] bg-[#0d0905]">
+                  <p class="text-[#c0602a] text-2xl font-bold" style="font-family:'Playfair Display',serif;">500+</p>
+                  <p class="text-[#7a6e62] text-xs mt-1" style="font-family:'DM Sans',sans-serif;">Order Selesai</p>
+                </div>
+                <div class="text-center p-4 rounded-xl border border-[#2a1f10] bg-[#0d0905]">
+                  <p class="text-[#c0602a] text-2xl font-bold" style="font-family:'Playfair Display',serif;">4.8★</p>
+                  <p class="text-[#7a6e62] text-xs mt-1" style="font-family:'DM Sans',sans-serif;">Rating Rata-rata</p>
+                </div>
+                <div class="text-center p-4 rounded-xl border border-[#2a1f10] bg-[#0d0905]">
+                  <p class="text-[#c0602a] text-2xl font-bold" style="font-family:'Playfair Display',serif;">13+</p>
+                  <p class="text-[#7a6e62] text-xs mt-1" style="font-family:'DM Sans',sans-serif;">Varian Produk</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTER & MENU SECTION -->
+    <div class="soft-divider max-w-screen-xl mx-auto"></div>
+
+    <section class="py-14 px-6 sm:px-10 lg:px-20">
+      <div class="max-w-screen-xl mx-auto">
+        
+        <div class="text-center mb-10 reveal">
+          <span class="badge-tag mb-4 inline-flex">✦ <span>Visual Kami</span></span>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#f5f0e8] section-title">Poster & Menu</h2>
+          <div class="w-20 h-0.5 bg-[#c0602a] mx-auto mt-6 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Poster -->
+          <div class="glass card reveal overflow-hidden">
+            <div class="p-5 border-b border-[#2a1f10]">
+              <p class="text-[#d4a96a] text-sm font-semibold tracking-widest uppercase"
+                style="font-family:'DM Sans',sans-serif;">✦ Poster</p>
+              <h3 class="text-[#f5f0e8] text-xl font-semibold mt-1"
+                  style="font-family:'Playfair Display',serif;">Ondel-Ondel Cookies</h3>
+            </div>
+            <div class="overflow-hidden">
+              <img src="${posterImg}" alt="Poster Ondel-Ondel"
+                  class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+          </div>
+
+          <!-- Menu -->
+          <div class="glass card reveal overflow-hidden">
+            <div class="p-5 border-b border-[#2a1f10]">
+              <p class="text-[#d4a96a] text-sm font-semibold tracking-widest uppercase"
+                style="font-family:'DM Sans',sans-serif;">✦ Menu</p>
+              <h3 class="text-[#f5f0e8] text-xl font-semibold mt-1"
+                  style="font-family:'Playfair Display',serif;">Daftar Produk Kami</h3>
+            </div>
+            <div class="overflow-hidden">
+              <img src="${menuImg}" alt="Menu Ondel-Ondel"
+                  class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -206,8 +323,7 @@ export function mainAbout() {
               <h3 class="text-[#d4a96a] text-xl font-semibold" style="font-family:'Poppins',sans-serif;">Visi</h3>
             </div>
             <p class="text-[#b8a898] leading-relaxed" style="font-family:'DM Sans',sans-serif;">
-              Menjadi brand kue kering premium terpercaya dengan kualitas rasa yang konsisten
-              dan pengalaman belanja yang memuaskan.
+              Menjadi brand kue yang menghadirkan cake dan cookies berkualitas premium, dapat dinikmati oleh semua kalangan tanpa mengorbankan cita rasa maupun mutu.
             </p>
           </div>
 
@@ -223,10 +339,10 @@ export function mainAbout() {
             </div>
 
             <ul class="text-[#b8a898] space-y-3 leading-relaxed" style="font-family:'DM Sans',sans-serif;">
-              <li class="flex gap-3"><span class="text-[#c0602a]">•</span> Bahan premium & proses produksi higienis</li>
-              <li class="flex gap-3"><span class="text-[#c0602a]">•</span> Konsistensi rasa, tekstur, kualitas tiap batch</li>
-              <li class="flex gap-3"><span class="text-[#c0602a]">•</span> Pelayanan cepat, ramah, transparan</li>
-              <li class="flex gap-3"><span class="text-[#c0602a]">•</span> Inovasi varian & packaging hampers</li>
+              <li class="flex gap-3"><span class="text-[#c0602a]">•</span> Menghadirkan kue kering dan cake dengan bahan pilihan dan standar kualitas terbaik.</li>
+              <li class="flex gap-3"><span class="text-[#c0602a]">•</span> Menawarkan produk premium dengan harga yang tetap terjangkau.</li>
+              <li class="flex gap-3"><span class="text-[#c0602a]">•</span> Menjaga konsistensi rasa, tekstur, dan tampilan dalam setiap produk.</li>
+              <li class="flex gap-3"><span class="text-[#c0602a]">•</span> Memberikan pengalaman manis yang berkesan bagi setiap pelanggan.</li>
             </ul>
           </div>
         </div>
@@ -304,7 +420,7 @@ export function mainAbout() {
           </div>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="#" class="btn-primary">Beli Sekarang</a>
+            <a href="index.html#productSection" class="btn-primary">Beli Sekarang</a>
             <a href="contact.html"
               class="px-6 py-3 rounded-full border border-[#2a1f10] text-[#f5f0e8] hover:border-[#c0602a] hover:text-[#d4a96a] transition"
               style="font-family:'DM Sans',sans-serif;">

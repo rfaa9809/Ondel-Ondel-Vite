@@ -19,7 +19,7 @@ import { Footer } from "./components/footer.js";
 import { ScrollTopBtn } from "./components/ScrollTopBtn.js";
 import { initScrollTop } from "./utils/scrollTop.js";
 
-const WA_NUMBER = "6285716275965";
+const WA_NUMBER = "6282211866577";
 
 window.orderViaWhatsApp = function (productName, price) {
   const pesan =

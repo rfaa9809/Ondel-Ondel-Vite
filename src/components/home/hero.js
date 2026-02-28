@@ -5,7 +5,7 @@ export function Hero() {
         <div class="hero-overlay"></div>
         <div class="hero-content w-full px-6 sm:px-10 lg:px-20 max-w-screen-xl mx-auto">
             <div class="max-w-xl">
-                <p class="label-tag mb-5 animate-fade-up delay-1">✦ &nbsp; Kue & Kering Premium Jakarta</p>
+                <p class="label-tag mb-5 animate-fade-up delay-1">✦ &nbsp; Kue & Kering Premium</p>
                 <h1 class="hero-headline text-5xl sm:text-6xl md:text-7xl mb-6 animate-fade-up delay-2">Cita
                     Rasa<br>Bikin Ketagihan</h1>
                 <p class="hero-sub text-base sm:text-lg mb-10 animate-fade-up delay-3 max-w-sm">Kualitas premium, harga
@@ -25,7 +25,7 @@ export function Hero() {
                     </div>
                     <div class="w-px h-10 bg-[#3a2e20]"></div>
                     <div>
-                        <p class="text-[#f5f0e8] font-semibold text-xl" style="font-family:'Playfair Display',serif">30+
+                        <p class="text-[#f5f0e8] font-semibold text-xl" style="font-family:'Playfair Display',serif">13+
                         </p>
                         <p class="text-[#7a6e62] text-xs tracking-wide uppercase mt-0.5">Varian Produk</p>
                     </div>

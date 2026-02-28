@@ -165,10 +165,10 @@ export function mainContact() {
                 class="w-full h-full"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=Jl%20Kampus%20Unkris%20No%2029&output=embed">
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.989179204456!2d106.9085274!3d-6.2651525999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3000f412ad1%3A0x9345f34eb957e7b8!2sOndel%20Ondel%20Cake%20and%20cookies!5e0!3m2!1sid!2sid!4v1772274804913!5m2!1sid!2sid">
               </iframe>
 
-              <a href="https://www.google.com/maps?q=Jl%20Kampus%20Unkris%20No%2029" target="_blank"
+              <a href="https://maps.app.goo.gl/fLAQy6axQHRs6E6a8" target="_blank"
                 class="absolute bottom-4 right-4 px-4 py-2 rounded-xl font-semibold text-sm
                        bg-[#0d0905]/80 border border-[#2a1f10] text-[#f5f0e8]
                        hover:border-[#c0602a] hover:text-[#d4a96a] transition"
@@ -204,4 +204,33 @@ export function mainContact() {
       </div>
     </section>
     `;
+}
+
+
+export function initFormToWhastapp() {
+  const form = document.getElementById("contactForm");
+    if (form) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const nama = document.getElementById("nama").value.trim();
+        const wa = document.getElementById("wa").value.trim();
+        const kategori = document.getElementById("kategori").value;
+        const tanggal = document.getElementById("tanggal").value;
+        const jumlah = document.getElementById("jumlah").value.trim();
+        const pesan = document.getElementById("pesan").value.trim();
+
+        const nomorTujuan = "6282211866577"; // admin tujuan
+        const msg =
+          `Halo Ondel-Ondel!%0A%0A` +
+          `Nama: ${encodeURIComponent(nama)}%0A` +
+          `WA: ${encodeURIComponent(wa)}%0A` +
+          `Kategori: ${encodeURIComponent(kategori)}%0A` +
+          `Tanggal dibutuhkan: ${encodeURIComponent(tanggal || "-")}%0A` +
+          `Jumlah: ${encodeURIComponent(jumlah || "-")}%0A%0A` +
+          `Pesan:%0A${encodeURIComponent(pesan)}`;
+
+        window.open(`https://wa.me/${nomorTujuan}?text=${msg}`, "_blank");
+      });
+}
 }

@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+
 export function Footer() {
   return `
     <footer style="background:#0d0905; border-top: 1px solid #2a1f10;">
@@ -9,12 +11,13 @@ export function Footer() {
             <!-- Brand col -->
             <div class="mb-10 md:mb-0 max-w-xs">
                 <a href="#" class="flex items-center gap-3 mb-4">
-                    <div class="w-9 h-9 rounded-full bg-[#c0602a] flex items-center justify-center flex-shrink-0">
-                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 3a1 1 0 110 2 1 1 0 010-2zm-3 8l1.5-4.5h3L13 13H7z"/>
-                        </svg>
-                    </div>
-                    <span class="text-[#f5f0e8] text-xl font-semibold" style="font-family:'Playfair Display',serif;">Ondel-Ondel</span>
+                    <div class="w-10 h-10 rounded-full bg-[#F9EEE7]
+                                            flex items-center justify-center overflow-hidden
+                                            shadow-[0_0_18px_rgba(192,96,42,0.45)]
+                                            border border-[#3a1f0d]">
+                                  <img src="${logo}" alt="Ondel-Ondel" class="w-10 h-10 object-contain">
+                                </div>
+                    <span class="text-[#f5f0e8] text-xl font-semibold" style="font-family:'Playfair Display',serif;">Ondel-Ondel Cake and Cookies</span>
                 </a>
                 <p class="text-[#7a6e62] text-sm leading-relaxed mb-6" style="font-family:'DM Sans',sans-serif;">
                     Kue kering & bolu premium dari dapur rumahan Jakarta. Dibuat dengan bahan pilihan, dikirim langsung ke tangan Anda.
@@ -25,7 +28,7 @@ export function Footer() {
                         class="w-9 h-9 rounded-full border border-[#2a1f10] flex items-center justify-center text-[#7a6e62] hover:border-[#c0602a] hover:text-[#c0602a] transition-all duration-200">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069Zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/></svg>
                     </a>
-                    <a href="https://wa.me/082211866577" target="_blank" aria-label="WhatsApp"
+                    <a href="https://wa.me/6282211866577" target="_blank" aria-label="WhatsApp"
                         class="w-9 h-9 rounded-full border border-[#2a1f10] flex items-center justify-center text-[#7a6e62] hover:border-[#25D366] hover:text-[#25D366] transition-all duration-200">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 71 72">
                             <path d="M12.5068 56.8405L15.7915 44.6381C13.1425 39.8847 12.3009 34.3378 13.4211 29.0154C14.5413 23.693 17.5482 18.952 21.89 15.6624C26.2319 12.3729 31.6173 10.7554 37.0583 11.1068C42.4992 11.4582 47.6306 13.755 51.5108 17.5756C55.3911 21.3962 57.7599 26.4844 58.1826 31.9065C58.6053 37.3286 57.0535 42.7208 53.812 47.0938C50.5705 51.4668 45.8568 54.5271 40.5357 55.7133C35.2146 56.8994 29.6432 56.1318 24.8438 53.5513L12.5068 56.8405ZM25.4386 48.985L26.2016 49.4365C29.6779 51.4918 33.7382 52.3423 37.7498 51.8555C41.7613 51.3687 45.4987 49.5719 48.3796 46.7452C51.2605 43.9185 53.123 40.2206 53.6769 36.2279C54.2308 32.2351 53.445 28.1717 51.4419 24.6709C49.4388 21.1701 46.331 18.4285 42.6027 16.8734C38.8745 15.3184 34.7352 15.0372 30.8299 16.0736C26.9247 17.11 23.4729 19.4059 21.0124 22.6035C18.5519 25.801 17.2209 29.7206 17.2269 33.7514C17.2237 37.0937 18.1503 40.3712 19.9038 43.2192L20.3823 44.0061L18.546 50.8167L25.4386 48.985Z"/>
@@ -48,7 +51,7 @@ export function Footer() {
                         <li><a href="#" class="hover:text-[#d4a96a] transition-colors">Home</a></li>
                         <li><a href="about.html" class="hover:text-[#d4a96a] transition-colors">About Us</a></li>
                         <li><a href="contact.html" class="hover:text-[#d4a96a] transition-colors">Contact Us</a></li>
-                        <li><a href="#productSection" class="hover:text-[#d4a96a] transition-colors">Produk</a></li>
+                        <li><a href="index.html#productSection" class="hover:text-[#d4a96a] transition-colors">Produk</a></li>
                     </ul>
                 </div>
 
@@ -67,11 +70,11 @@ export function Footer() {
                     <ul class="text-[#7a6e62] text-sm space-y-3" style="font-family:'DM Sans',sans-serif;">
                         <li class="flex items-center gap-2">
                             <svg class="w-4 h-4 text-[#25D366] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.5 2C6.253 2 2 6.253 2 11.5c0 1.87.504 3.623 1.387 5.127L2 22l5.544-1.363A9.454 9.454 0 0 0 11.5 21C16.747 21 21 16.747 21 11.5S16.747 2 11.5 2zm0 17.25a7.726 7.726 0 0 1-3.943-1.082l-.283-.168-2.927.719.748-2.858-.184-.294A7.706 7.706 0 0 1 3.75 11.5C3.75 7.22 7.22 3.75 11.5 3.75S19.25 7.22 19.25 11.5 15.78 19.25 11.5 19.25z"/></svg>
-                            <a href="https://wa.me/082211866577" target="_blank" class="hover:text-[#d4a96a] transition-colors">0822-1186-6577</a>
+                            <a href="https://wa.me/6282211866577" target="_blank" class="hover:text-[#d4a96a] transition-colors">0822-1186-6577</a>
                         </li>
                         <li class="flex items-start gap-2">
                             <svg class="w-4 h-4 text-[#c0602a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-                            <span>Jl Kampus Unkris No 29 RT 5 RW 9, Indonesia</span>
+                            <span>Jl. Unkris No.16, RT.006/RW.009, Jaticempaka, Kec. Pd. Gede, Kota Bks, Jawa Barat 17411</span>
                         </li>
                         <li class="flex items-center gap-2">
                             <svg class="w-4 h-4 text-[#c0602a] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>

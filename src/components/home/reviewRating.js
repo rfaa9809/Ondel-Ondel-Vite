@@ -244,7 +244,7 @@ export function reviewRating() {
         <!-- CTA buat nulis review -->
         <div class="text-center mt-12">
             <p class="text-[#7a6e62] text-sm mb-4" style="font-family:'DM Sans',sans-serif;">Sudah pernah memesan? Bagikan pengalaman kamu!</p>
-            <a href="https://maps.google.com" target="_blank"
+            <a href="https://maps.app.goo.gl/fLAQy6axQHRs6E6a8" target="_blank"
                 class="inline-flex items-center gap-2.5 px-8 py-3 rounded-xl font-medium text-sm border border-[#2a1f10] text-[#f5f0e8] hover:border-[#c0602a] hover:text-[#d4a96a] transition-all duration-200"
                 style="font-family:'DM Sans',sans-serif; background:#161008;">
                 <svg width="18" height="18" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">

@@ -5,14 +5,22 @@ import {
   initNavbar,
   initNavbarActiveLink,
 } from "./components/navbar.js";
-import { HeroContact } from "./components/contact/hero.js";
 import { Footer } from "./components/footer.js";
-import { mainContact } from "./components/contact/mainContact.js";
 import { ScrollTopBtn } from "./components/ScrollTopBtn.js";
 import { initScrollTop } from "./utils/scrollTop.js";
 const path = window.location.pathname;
 
 const isServices = path.endsWith("/services.html") || path.endsWith("/services");
+
+const WA_NUMBER = "6282211866577";
+
+window.orderViaWhatsApp = function () {
+  const pesan =
+    `Halo Kak Ondel-Ondel! 👋\n`;
+
+  const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(pesan)}`;
+  window.open(url, "_blank");
+};
 
 document.querySelector("#app").innerHTML = `
   ${Navbar()}
@@ -46,7 +54,7 @@ export function Services() {
         <div class="text-center mb-16">
           <p class="label-tag mb-3">OUR SERVICES</p>
           <h2 class="text-4xl md:text-5xl font-semibold italic mb-4">
-            Layanan Ondel-Ondel Cookies 🍪
+            Layanan Ondel-Ondel Cake and Cookies 🍪
           </h2>
           <p class="hero-sub max-w-2xl mx-auto">
             Kami menghadirkan layanan terbaik untuk setiap momen spesial kamu.
@@ -81,10 +89,10 @@ export function Services() {
         <!-- CTA -->
         <div class="mt-16 text-center">
           <p class="hero-sub mb-6">
-            Siap buat momen kamu lebih manis bersama Ondel-Ondel Cookies?
+            Siap buat momen kamu lebih manis bersama Ondel-Ondel Cake and Cookies?
           </p>
           <button 
-            onclick="orderViaWhatsApp('Layanan Services', 'Konsultasi')"
+            onclick="orderViaWhatsApp('LayananServices', 'Konsultasi')"
             class="btn-primary">
             Konsultasi via WhatsApp
           </button>
