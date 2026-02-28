@@ -6,7 +6,7 @@ import cornFlakeImg from '../../assets/products/corn-flakes-cookies.jpeg';
 import coklatStickImg from '../../assets/products/coklat-stick.jpeg';
 import bolaMesesImg from '../../assets/products/Bola-meses.jpeg'
 import batangKejuImg from '../../assets/products/batang-keju.jpeg'
-import BoluCoklatImg from '../../assets/products/bolu-coklat.jpeg'
+import BoluCoklatImg from '../../assets/products/Bolu-coklat.jpeg'
 import BoluPandanCoklatImg from '../../assets/products/bolu-pandan-coklat.jpeg'
 import BoluPandanImg from '../../assets/products/bolu-pandan.jpeg'
 import BoluTapeImg from '../../assets/products/bolu-tape.jpeg'
