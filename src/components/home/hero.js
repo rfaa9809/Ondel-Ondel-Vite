@@ -1,6 +1,6 @@
 export function Hero() {
   return `
-<section class="hero">
+<section class="hero pt-24">
     <div class="hero-photo"></div>
     <div class="hero-overlay"></div>
     

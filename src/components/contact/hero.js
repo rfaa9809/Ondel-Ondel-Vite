@@ -1,6 +1,6 @@
 export function HeroContact() {
     return `
-        <section class="pt-10 pb-8 px-6 sm:px-10 lg:px-20 relative z-10">
+      <section class="pt-24 pb-8 px-6 sm:px-10 lg:px-20 relative z-10">
       <div class="max-w-screen-xl mx-auto text-center">
         <span class="badge">✦ <span>Hubungi Kami</span></span>
 
