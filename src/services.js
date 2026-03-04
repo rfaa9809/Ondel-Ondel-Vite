@@ -65,12 +65,9 @@ export function Services() {
         <!-- Services Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          ${card("🎂 Custom Cake & Cookies",
-            "Kue ulang tahun custom tema, wedding cake elegan, karakter anak, hingga desain sesuai request. Dibuat fresh & premium.",
-            "Pre-order H-2")}
 
           ${card("🎉 Paket Acara & Catering",
-            "Snack box dan paket kue untuk ulang tahun, arisan, meeting kantor, hingga wedding.",
+            "Snack box dan paket kue untuk arisan, meeting kantor dan acara seperti perayaan hari raya.",
             "Minimal 10 box")}
 
           ${card("🚚 Delivery Service",
@@ -82,7 +79,7 @@ export function Services() {
             "DP 50% Custom")}
 
           ${card("✨ Dessert Table Setup",
-            "Setup dessert table & dekorasi sesuai tema acara kamu. Cocok untuk event premium & wedding.",
+            "Setup dessert table & dekorasi sesuai tema acara kamu. Cocok untuk event premium.",
             "By Request")}
         </div>
 

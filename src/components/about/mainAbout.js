@@ -182,7 +182,7 @@ export function mainAbout() {
                   <p class="text-[#7a6e62] text-xs mt-1" style="font-family:'DM Sans',sans-serif;">Order Selesai</p>
                 </div>
                 <div class="text-center p-4 rounded-xl border border-[#2a1f10] bg-[#0d0905]">
-                  <p class="text-[#c0602a] text-2xl font-bold" style="font-family:'Playfair Display',serif;">4.8★</p>
+                  <p class="text-[#c0602a] text-2xl font-bold" style="font-family:'Playfair Display',serif;">4.9★</p>
                   <p class="text-[#7a6e62] text-xs mt-1" style="font-family:'DM Sans',sans-serif;">Rating Rata-rata</p>
                 </div>
                 <div class="text-center p-4 rounded-xl border border-[#2a1f10] bg-[#0d0905]">
