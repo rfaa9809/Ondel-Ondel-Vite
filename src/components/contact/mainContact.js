@@ -1,3 +1,5 @@
+import qrisImg from '../../assets/qris.jpg'
+
 export function mainContact() {
   return `
         <section class="py-10 px-6 sm:px-10 lg:px-20 relative z-10">
@@ -86,6 +88,31 @@ export function mainContact() {
               Sertakan jumlah, tanggal kirim, dan budget — biar kami bisa rekomendasikan paket terbaik.
             </p>
           </div>
+
+                  <!-- QRIS -->
+        <div class="glass card p-6">
+          <p class="text-xs tracking-widest uppercase text-[#7a6e62]" style="font-family:'DM Sans',sans-serif;">
+            Pembayaran
+          </p>
+          <h3 class="text-[#f5f0e8] font-semibold mt-2" style="font-family:'Poppins',sans-serif;">
+            Scan QRIS
+          </h3>
+          <p class="text-[#b8a898] text-sm mt-2 leading-relaxed" style="font-family:'DM Sans',sans-serif;">
+            Bayar langsung via QRIS — support semua e-wallet & m-banking.
+          </p>
+
+          <div class="mt-4 rounded-xl overflow-hidden border border-[#2a1f10] bg-white p-3 mx-auto max-w-[400px] md:max-w-[180px]">
+            <img src="${qrisImg}" alt="QRIS Ondel-Ondel" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="mt-3 flex flex-wrap gap-2 text-[#b8a898]">
+            <span class="badge-tag">GoPay</span>
+            <span class="badge-tag">OVO</span>
+            <span class="badge-tag">Dana</span>
+            <span class="badge-tag">BCA</span>
+            <span class="badge-tag">Mandiri</span>
+          </div>
+        </div>
 
         </aside>
 
